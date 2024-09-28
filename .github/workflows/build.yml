@@ -21,6 +21,9 @@ jobs:
       - name: linting
         run: yarn lint
 
+      - name: test server
+        run: yarn test
+
 
   docker-build:
     runs-on: ubuntu-latest
