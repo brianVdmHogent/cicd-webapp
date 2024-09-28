@@ -24,6 +24,16 @@ jobs:
 
   docker-build:
     runs-on: ubuntu-latest
+
+
+    strategy:
+      matrix:
+        platform:
+          - linux/amd64
+          - linux/arm/v6
+          - linux/arm/v7
+          - linux/arm64
+
     steps:
       -
         name: Set up QEMU
